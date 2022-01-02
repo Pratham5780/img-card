@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>img-card</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+    * {
+      margin: 0%;
+      box-sizing: border-box;
+      background-image: linear-gradient(rgb(219, 201, 219), rgb(221, 206, 209));
+    }
+    h1 {
+      text-align: center;
+      font-family: monospace;
+      background-image: linear-gradient(rgb(243, 209, 226), rgb(196, 150, 196));
+      color: black;
+      padding: 30px;
+      font-weight: lighter;
+    }
+
+    .img1 {
+      border: 1px solid black;
+      width: 24%;
+      height: 350px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .img1:hover {
+      box-shadow: 3px 2px 5px rgb(136, 77, 136);
+    }
+    .img2:hover {
+      box-shadow: 3px 2px 5px rgb(136, 77, 136);
+    }
+    .img3:hover {
+      box-shadow: 3px 2px 5px rgb(136, 77, 136);
+    }
+    h4 {
+      margin: 10px;
+    }
+    p {
+      margin: 5px;
+    }
+
+    .img2 {
+      border: 1px solid black;
+      width: 24%;
+      height: 350px;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 3px 5px 10px solid black;
+    }
+    .img3 {
+      border: 1px solid black;
+      width: 24%;
+      height: 350px;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 3px 5px 10px solid black;
+    }
+    .img-container {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 25px;
+      padding: 25px;
+    }
+    h4 {
+      font-family: sans-serif;
+      font-weight: lighter;
+    }
+    @media (max-width: 1400px) {
+      .img-container {
+        display: block;
+        justify-content: space-evenly;
+        margin: 25px;
+        padding: 25px;
+      }
+      h1 {
+        text-align: center;
+        font-family: monospace;
+        background-image: linear-gradient(
+          rgb(243, 209, 226),
+          rgb(196, 150, 196)
+        );
+        color: black;
+        padding: 30px;
+        font-weight: lighter;
+      }
+      img {
+        width: 50%;
+      }
+      .img1 {
+        border: 1px solid black;
+        width: 80%;
+        height: 350px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .img1:hover {
+        box-shadow: 3px 2px 5px rgb(136, 77, 136);
+      }
+      .img2:hover {
+        box-shadow: 3px 2px 5px rgb(136, 77, 136);
+      }
+      .img3:hover {
+        box-shadow: 3px 2px 5px rgb(136, 77, 136);
+      }
+      h4 {
+        margin: 10px;
+      }
+      p {
+        margin: 5px;
+      }
+
+      .img2 {
+        border: 1px solid black;
+        width: 80%;
+        height: 350px;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 3px 5px 10px solid black;
+      }
+      .img3 {
+        border: 1px solid black;
+        width: 80%;
+        height: 350px;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 3px 5px 10px solid black;
+      }
+
+      h4 {
+        font-family: sans-serif;
+        font-weight: lighter;
+      }
+    }
+    button {
+      height: 40px;
+      width: 150px;
+      margin-left: 45%;
+      margin-top: 5%;
+      cursor: pointer;
+      transform: translateY(50%);
+      font-family: monospace;
+    }
+    .scroll {
+      margin-left: 50%;
+    }
+    button:hover {
+      color: white;
+      background-image: linear-gradient(black, grey);
+      border-radius: 5px;
+      box-shadow: 3px 4px 5px grey;
+    }
+    span {
+      margin-left: 50%;
+    }
+    .sign {
+      margin-top: 2%;
+    }
+  </style>
+  <body>
+    <h1>Blog Posts</h1>
+    <div class="container">
+      <div class="img-container">
+        <div class="img1">
+          <h4>Communication Skills</h4>
+          <a href="#"><img src="images.jpg" /></a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+            deserunt soluta <b>doloremque enim</b> illo dolorem, at ducimus
+            aperiam magni voluptatibus quidem expedita, doloribus architecto,
+            quasi
+          </p>
+        </div>
+        <br />
+        <div class="img2">
+          <h4>Discipline</h4>
+          <a href="#"><img src="download.jpg" /></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            minus, <b>magnam</b> quam corrupti expedita officiis perspiciatis
+            quis veniam nostrum fugit sunt id. Perspiciatis rerum pariatur ea
+          </p>
+        </div>
+        <br />
+        <div class="img3">
+          <h4>Work-Life Balance</h4>
+          <a href="#"><img src="download (2).jpg" /></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            minus, <b>magnam quam corrupti</b> expedita officiis perspiciatis
+            quis veniam nostrum fugit sunt id. Perspiciatis rerum pariatur ea
+          </p>
+        </div>
+      </div>
+      <div class="sroll">
+        <button>Explore more :)</button><br />
+        <div class="sign">
+          <span>\/</span><br /><span>\/</span><br /><span>\/</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
